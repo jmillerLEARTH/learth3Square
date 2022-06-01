@@ -1,4 +1,5 @@
 import {uiHandler} from "./uiHandler.js";
+import {ShuffleArray} from "./utils.js";
 
 export class gameHandler
 {
@@ -24,6 +25,10 @@ export class gameHandler
         this._LoadEligibleContent();
         
         this.uiHandler.BuildGrid();
+        
+        this._DistributeContent();
+        
+        this.uiHandler.SetContentToFade
     }
     
     _LoadSelectedSettings(){
@@ -40,5 +45,40 @@ export class gameHandler
                 this.eligibleContent.push(ph);
             }
         }  
+    }
+    
+    _TransformEachLetterToSpan(text){
+        
+        let $returnString = "";
+        
+        for(let letter of text){
+            
+            letter = `<span class="init">` + letter + `</span>`;
+            $returnString += letter;
+        }
+        
+        return $returnString
+    }
+    
+    _DistributeContent(){
+        
+        let $destructoArr = [...this.eligibleContent];
+        
+        $destructoArr = ShuffleArray($destructoArr);
+        
+        console.log($destructoArr);
+        
+        console.log(this.uiHandler.gridSpaces);
+        
+        for(const gs of this.uiHandler.gridSpaces){
+            
+            const $phraseSpan = document.createElement("div");
+            
+            const $engPhrase = $destructoArr.shift().engPhrase;
+            
+            $phraseSpan.innerHTML = this._TransformEachLetterToSpan($engPhrase);
+            
+            this.uiHandler.UpdateGridspace(gs,$phraseSpan);
+        }
     }
 }

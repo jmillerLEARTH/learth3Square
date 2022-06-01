@@ -1,3 +1,16 @@
+import {ShuffleArray} from "./utils.js";
+
+class gridspace
+{
+    constructor(domId){
+        
+        this.domId = domId;
+        this.initialString;
+        this.destString;
+    }
+}
+
+
 export class uiHandler
 {
     constructor(gameHandler){
@@ -15,8 +28,7 @@ export class uiHandler
         
         this.grid = document.createElement("div");
         this.grid.style = `display: grid;
-            justify-items: center;
-            align-items: center;
+            place-items: center;
             grid-template-columns: 200px 200px 200px;
             grid-template-rows: 200px 200px 200px;
             gap: 5px;
@@ -37,15 +49,51 @@ export class uiHandler
         let $gridSpaceDOM = document.createElement("div");
         $gridSpaceDOM.id = "gridSpace" + seed;
         $gridSpaceDOM.style.backgroundColor = "lightGray";
+        $gridSpaceDOM.style.placeItems = "center";
         $gridSpaceDOM.style.height = "200px";
         $gridSpaceDOM.style.width = "200px";
         
         this.grid.append($gridSpaceDOM);
         
-        this.gridSpaces.push($gridSpaceDOM.id);
+        this.gridSpaces.push(new gridspace($gridSpaceDOM.id));
     }
     
-    FadeContent(){
+    UpdateGridspace(gs,domObj){
+        
+        console.log(gs);
+        
+        const $gsDOM = document.getElementById(gs.domId);
+        
+        domObj.style.fontSize = "48px";
+        
+        $gsDOM.append(domObj);
+        
+        domObj.style.marginTop = Number(100-domObj.clientHeight/2);
+        
+        domObj.style.textAlign = 'center';
+        
+        gs.initialString = domObj.innerText;
+        
+        gs.destString = this.gameHandler.langHandler.FindMatchingPhrase(this.gameHandler.gameLangs[0],gs.initialString,true).phrase;
+        
+        this._TransformEachLetterToSpan($gsDOM.innerText);
+        
+        
+    }
+    
+    ReplaceGSContent(gs){
+        
+        const $textDivDOM = document.getElementById(gs).querySelector("div");
+        
+        for(const letterSpan of $textDivDOM.querySelectorAll("span")){
+            
+            if(gs.initialString.length > 0){
+                
+                
+            }
+        }
+        
+        
         
         
     }
