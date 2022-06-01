@@ -8,6 +8,11 @@ export class langHandler {
         this.langs = [ojibwemowinDict];
     }
     
+    GetDict(lang){
+        
+        if(lang == "ojibwemowin") return this.langs[0];
+    }
+    
     FindMatchingPhrase(lang,phrase,searchByEngPhrase=false){
         
         let $dictToSearch;

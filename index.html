@@ -4,11 +4,15 @@
         import {langHandler} from './indigLangSounds/indigLangSounds.js';
         window.langHandler = new langHandler();
     </script>
+    <script type="module" >
+        import {gameHandler} from './gameHandler.js';
+        window.gameHandler = new gameHandler(window.langHandler);
+    </script>
 </head>
  
 <body style="background-color:F6FFE4">
     <div id="mainContent">
-        <button onclick="langHandler.TEST()">Test!</button>
+        <button onclick="gameHandler.StartGame()">Test!</button>
     </div>
 </body>
 </HTML>
