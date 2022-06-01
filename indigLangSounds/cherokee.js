@@ -1,3 +1,44 @@
+import {phraseHandler} from "./indigLangSounds.js";
+
+const cherokeeDict = [
+    
+    {
+    phrase: "sowo",
+    lang: "cherokee",
+    engPhrase: "1",
+    soundFiles: ["indigLangSounds/cherokeeSounds/01.mp3"];
+    },
+    
+    {
+    phrase: "tali",
+    lang: "cherokee",
+    engPhrase: "2",
+    soundFiles: ["indigLangSounds/cherokeeSounds/02.mp3"];
+    },
+    
+    {
+    phrase: "tsoi",
+    lang: "cherokee",
+    engPhrase: "3",
+    soundFiles: ["indigLangSounds/cherokeeSounds/03.mp3"];
+    },
+    
+    {
+    phrase: "nvgi",
+    lang: "cherokee",
+    engPhrase: "4",
+    soundFiles: ["indigLangSounds/cherokeeSounds/04.mp3"];
+    },
+    
+    {
+    phrase: "hisgi",
+    lang: "cherokee",
+    engPhrase: "5",
+    soundFiles: ["indigLangSounds/cherokeeSounds/05.mp3"];
+    },
+    
+]
+
 export function InitCherokee(cherokee){
     
     

@@ -1,3 +1,181 @@
+export const ojibwemowinDict = [
+    
+    {
+    phrase: "waawaashkeshi",
+    lang: "ojibwemowin",
+    engPhrase: "deer",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/waawaashkeshi_na__sg___gj512069.mp4"]
+    },
+    
+    {
+    phrase: "waabizheshi",
+    lang: "ojibwemowin",
+    engPhrase: "marten",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/waabizheshi__na_sg__gh68523_2.mp4"]
+    },
+    
+    {
+    phrase: "maang",
+    lang: "ojibwemowin",
+    engPhrase: "loon",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/maang__na_sg__gh68548_3.mp4"]
+    },
+    
+    {
+    phrase: "makwa",
+    lang: "ojibwemowin",
+    engPhrase: "bear",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/makwa__na_sg__njni609051_3.mp4"]
+    },
+    
+    {
+    phrase: "bineshiinh",
+    lang: "ojibwemowin",
+    engPhrase: "bird",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/bineshiinh__na_sg__sp65368_2.mp4"]
+    },
+    
+    {
+    phrase: "bezhig",
+    lang: "ojibwemowin",
+    engPhrase: "1",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/bezhig_av____lw580143.mp4"]
+    },
+    
+    {
+    phrase: "niizh",
+    lang: "ojibwemowin",
+    engPhrase: "2",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niizh__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "niswi",
+    lang: "ojibwemowin",
+    engPhrase: "3",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niiwin",
+    lang: "ojibwemowin",
+    engPhrase: "4",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niiwin__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "naanan",
+    lang: "ojibwemowin",
+    engPhrase: "5",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/naanan__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "ningodwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "6",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ningodwaaswi__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "niizhwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "7",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niizhwaaswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "nishwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "8",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/nishwaaswi__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "zhaangaswi",
+    lang: "ojibwemowin",
+    engPhrase: "9",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/zhaangaswi_av____gh580143.mp4"]
+    },
+    
+    {
+    phrase: "midaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "10",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/midaaswi__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "ashi-bezhig",
+    lang: "ojibwemowin",
+    engPhrase: "11",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-bezhig__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "ashi-niizh",
+    lang: "ojibwemowin",
+    engPhrase: "12",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizh__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "ashi-niswi",
+    lang: "ojibwemowin",
+    engPhrase: "13",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niswi__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "ashi-niiwin",
+    lang: "ojibwemowin",
+    engPhrase: "14",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niiwin__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "ashi-naanan",
+    lang: "ojibwemowin",
+    engPhrase: "15",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-naanan__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "ashi-ningodwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "16",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ningodwaaswi__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "ashi-niizhwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "17",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizhwaaswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "ashi-ishwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "18",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ishwaaswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "ashi-zhaangaswi",
+    lang: "ojibwemowin",
+    engPhrase: "19",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi__ta_mi_2s-3__sp65284_3.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/zhaangaswi_av____gh580143.mp4"]
+    },
+    
+    {
+    phrase: "niishtana",
+    lang: "ojibwemowin",
+    engPhrase: "20",
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4"]
+    },
+]
+
 export function InitOjibwemowin(ojibwemowin){
     
     
