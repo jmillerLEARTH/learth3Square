@@ -18,7 +18,7 @@ export class gameHandler
         
     }
     
-    StartGame(){ 
+    StartGame(){
         
         this._LoadSelectedSettings();
         
@@ -26,9 +26,11 @@ export class gameHandler
         
         this.uiHandler.BuildGrid();
         
-        this._DistributeContent();
+        this.DistributeContent();
         
-        this.uiHandler.SetContentToFade
+        this.uiHandler.AddPauseButton();
+        
+        this.uiHandler.AddNextRoundButton();
     }
     
     _LoadSelectedSettings(){
@@ -60,25 +62,29 @@ export class gameHandler
         return $returnString
     }
     
-    _DistributeContent(){
+    DistributeContent(){
         
         let $destructoArr = [...this.eligibleContent];
         
         $destructoArr = ShuffleArray($destructoArr);
         
-        console.log($destructoArr);
-        
-        console.log(this.uiHandler.gridSpaces);
-        
         for(const gs of this.uiHandler.gridSpaces){
             
-            const $phraseSpan = document.createElement("div");
+            let $phraseSpan = document.createElement("div");
+            
+            $phraseSpan.style.fontWeight = "bold";
+            $phraseSpan.style.textDecoration = "underline";
+            $phraseSpan.style.fontFamily = "sans-serif";
             
             const $engPhrase = $destructoArr.shift().engPhrase;
             
             $phraseSpan.innerHTML = this._TransformEachLetterToSpan($engPhrase);
             
+//            $phraseSpan.insertAdjacentHTML("beforeend", "<br>");
+            
             this.uiHandler.UpdateGridspace(gs,$phraseSpan);
+            
+            gs.SetMyIntervalFnToRandomSecs();
         }
     }
 }
