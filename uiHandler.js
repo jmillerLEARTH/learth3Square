@@ -31,8 +31,8 @@ export class uiHandler
         this.gameHandler = gameHandler;
         this.grid;
         this.gridSpaces = [];
-        this.gridSpaceWidth = "450px";
-        this.gridSpaceHeight = "300px";
+        this.gridSpaceWidth = "450px"; //450
+        this.gridSpaceHeight = "300px"; //300
     }
     
     DisplayGameSettingsPage(){
