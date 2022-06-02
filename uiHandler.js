@@ -8,6 +8,11 @@ class gridspace
         this.initialString;
         this.destString;
     }
+    
+    SetMyTimeoutFnToRandomSecs(){
+        
+        setInterval()
+    }
 }
 
 
@@ -85,15 +90,12 @@ export class uiHandler
         
         const $textDivDOM = document.getElementById(gs).querySelector("div");
         
-        for(const letterSpan of $textDivDOM.querySelectorAll("span")){
-            
-            if(gs.initialString.length > 0){
-                
-                
-            }
-        }
+        const $nextDestSpan = document.createElement("span");
+        $nextDestSpan.innerText = gs.destString.shift();
         
+        $textDivDOM.querySelectorAll("init")[0].remove();
         
+        $textDivDOM.prepend($nextDestSpan);
         
         
     }
