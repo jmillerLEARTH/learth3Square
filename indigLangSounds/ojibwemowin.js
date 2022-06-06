@@ -44,7 +44,7 @@ export const ojibwemowinDict = [
     phrase: "bezhig",
     lang: "ojibwemowin",
     engPhrase: "1",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/bezhig_av____lw580143.mp4"]
     },
     
@@ -52,7 +52,7 @@ export const ojibwemowinDict = [
     phrase: "niizh",
     lang: "ojibwemowin",
     engPhrase: "2",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niizh__qnt__sp67490.mp4"]
     },
     
@@ -60,7 +60,7 @@ export const ojibwemowinDict = [
     phrase: "niswi",
     lang: "ojibwemowin",
     engPhrase: "3",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niswi__qnt__gp68005_3.mp4"]
     },
     
@@ -68,7 +68,7 @@ export const ojibwemowinDict = [
     phrase: "niiwin",
     lang: "ojibwemowin",
     engPhrase: "4",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niiwin__qnt__sp67490.mp4"]
     },
     
@@ -76,7 +76,7 @@ export const ojibwemowinDict = [
     phrase: "naanan",
     lang: "ojibwemowin",
     engPhrase: "5",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/naanan__qnt__nj61006_0.mp4"]
     },
     
@@ -84,7 +84,7 @@ export const ojibwemowinDict = [
     phrase: "ningodwaaswi",
     lang: "ojibwemowin",
     engPhrase: "6",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ningodwaaswi__qnt__nj61006_0.mp4"]
     },
     
@@ -92,7 +92,7 @@ export const ojibwemowinDict = [
     phrase: "niizhwaaswi",
     lang: "ojibwemowin",
     engPhrase: "7",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niizhwaaswi__qnt__gp68005_3.mp4"]
     },
     
@@ -100,7 +100,7 @@ export const ojibwemowinDict = [
     phrase: "nishwaaswi",
     lang: "ojibwemowin",
     engPhrase: "8",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/nishwaaswi__qnt__nj61006_0.mp4"]
     },
     
@@ -108,7 +108,7 @@ export const ojibwemowinDict = [
     phrase: "zhaangaswi",
     lang: "ojibwemowin",
     engPhrase: "9",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/zhaangaswi_av____gh580143.mp4"]
     },
     
@@ -116,7 +116,7 @@ export const ojibwemowinDict = [
     phrase: "midaaswi",
     lang: "ojibwemowin",
     engPhrase: "10",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional", "simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/midaaswi__qnt__nj61006_0.mp4"]
     },
     
@@ -124,7 +124,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-bezhig",
     lang: "ojibwemowin",
     engPhrase: "11",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-bezhig__qnt__sp67490.mp4"]
     },
     
@@ -132,7 +132,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-niizh",
     lang: "ojibwemowin",
     engPhrase: "12",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizh__qnt__gp68005_3.mp4"]
     },
     
@@ -140,7 +140,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-niswi",
     lang: "ojibwemowin",
     engPhrase: "13",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niswi__qnt__sp67490.mp4"]
     },
     
@@ -148,7 +148,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-niiwin",
     lang: "ojibwemowin",
     engPhrase: "14",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niiwin__qnt__gp68005_3.mp4"]
     },
     
@@ -156,7 +156,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-naanan",
     lang: "ojibwemowin",
     engPhrase: "15",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-naanan__qnt__gp68005_3.mp4"]
     },
     
@@ -164,7 +164,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-ningodwaaswi",
     lang: "ojibwemowin",
     engPhrase: "16",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ningodwaaswi__qnt__nj61006_0.mp4"]
     },
     
@@ -172,7 +172,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-niizhwaaswi",
     lang: "ojibwemowin",
     engPhrase: "17",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizhwaaswi__qnt__gp68005_3.mp4"]
     },
     
@@ -180,7 +180,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-ishwaaswi",
     lang: "ojibwemowin",
     engPhrase: "18",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ishwaaswi__qnt__gp68005_3.mp4"]
     },
     
@@ -188,7 +188,7 @@ export const ojibwemowinDict = [
     phrase: "ashi-zhaangaswi",
     lang: "ojibwemowin",
     engPhrase: "19",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi__ta_mi_2s-3__sp65284_3.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/zhaangaswi_av____gh580143.mp4"]
     },
     
@@ -196,8 +196,80 @@ export const ojibwemowinDict = [
     phrase: "niishtana",
     lang: "ojibwemowin",
     engPhrase: "20",
-    groups: ["number","cardinal","traditional"],
+    groups: ["number","cardinal","traditional","two digit number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-bezhig",
+    lang: "ojibwemowin",
+    engPhrase: "21",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-bezhig__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-niizh",
+    lang: "ojibwemowin",
+    engPhrase: "22",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizh__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-niswi",
+    lang: "ojibwemowin",
+    engPhrase: "23",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niswi__qnt__sp67490.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-niiwin",
+    lang: "ojibwemowin",
+    engPhrase: "24",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niiwin__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-naanan",
+    lang: "ojibwemowin",
+    engPhrase: "25",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-naanan__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-ningodwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "26",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ningodwaaswi__qnt__nj61006_0.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-niizhwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "27",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-niizhwaaswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-ishwaaswi",
+    lang: "ojibwemowin",
+    engPhrase: "28",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi-ishwaaswi__qnt__gp68005_3.mp4"]
+    },
+    
+    {
+    phrase: "niishtana ashi-zhaangaswi",
+    lang: "ojibwemowin",
+    engPhrase: "29",
+    groups: ["number","cardinal","traditional","two digit number"],
+    soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niishtana__qnt__nj61006_0.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/ashi__ta_mi_2s-3__sp65284_3.mp4","https://s3.amazonaws.com/ojibwe-audio-transcoded/zhaangaswi_av____gh580143.mp4"]
     },
 ]
 
