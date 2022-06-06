@@ -44,7 +44,7 @@ export class gameHandler
             
             for(const ph of this.langHandler.GetDict(lang)){
                 
-                this.eligibleContent.push(ph);
+                if(ph.groups.includes("animal")) this.eligibleContent.push(ph);
             }
         }  
     }
@@ -77,6 +77,14 @@ export class gameHandler
             $phraseSpan.style.fontFamily = "sans-serif";
             
             const $engPhrase = $destructoArr.shift().engPhrase;
+            
+            if($destructoArr.length == 0){
+                
+                $destructoArr = [...this.eligibleContent];
+        
+                $destructoArr = ShuffleArray($destructoArr);
+                
+            }
             
             $phraseSpan.innerHTML = this._TransformEachLetterToSpan($engPhrase);
             
