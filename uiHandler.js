@@ -125,7 +125,7 @@ export class uiHandler
         
         let $gridSpaceDOM = document.createElement("div");
         $gridSpaceDOM.id = "gridSpace" + seed;
-        $gridSpaceDOM.style.backgroundColor = "lightGray";
+        $gridSpaceDOM.style.backgroundColor = "#F5F5F5";
         $gridSpaceDOM.style.placeItems = "center";
         $gridSpaceDOM.style.height = this.gridSpaceHeight;
         $gridSpaceDOM.style.width = this.gridSpaceWidth;
