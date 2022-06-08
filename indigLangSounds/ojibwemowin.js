@@ -44,7 +44,7 @@ export const ojibwemowinDict = [
     phrase: "bezhig",
     lang: "ojibwemowin",
     engPhrase: "1",
-    groups: ["number","cardinal","traditional", "simple number"],
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/bezhig_av____lw580143.mp4"]
     },
     
@@ -52,7 +52,7 @@ export const ojibwemowinDict = [
     phrase: "niizh",
     lang: "ojibwemowin",
     engPhrase: "2",
-    groups: ["number","cardinal","traditional", "simple number"],
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niizh__qnt__sp67490.mp4"]
     },
     
@@ -60,7 +60,7 @@ export const ojibwemowinDict = [
     phrase: "niswi",
     lang: "ojibwemowin",
     engPhrase: "3",
-    groups: ["number","cardinal","traditional", "simple number"],
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niswi__qnt__gp68005_3.mp4"]
     },
     
@@ -68,7 +68,7 @@ export const ojibwemowinDict = [
     phrase: "niiwin",
     lang: "ojibwemowin",
     engPhrase: "4",
-    groups: ["number","cardinal","traditional", "simple number"],
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/niiwin__qnt__sp67490.mp4"]
     },
     
@@ -76,7 +76,7 @@ export const ojibwemowinDict = [
     phrase: "naanan",
     lang: "ojibwemowin",
     engPhrase: "5",
-    groups: ["number","cardinal","traditional", "simple number"],
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
     soundFiles: ["https://s3.amazonaws.com/ojibwe-audio-transcoded/naanan__qnt__nj61006_0.mp4"]
     },
     

@@ -42,11 +42,12 @@ export class uiHandler
     BuildGrid(){
         
         this.grid = document.createElement("div");
+        this.grid.id = "bigGrid";
         this.grid.style = `display: grid;
             place-items: center;
             grid-template-columns:` + this.gridSpaceWidth + ` ` + this.gridSpaceWidth + ` ` + this.gridSpaceWidth + `;
             grid-template-rows:` + this.gridSpaceHeight + ` ` + this.gridSpaceHeight + ` ` + this.gridSpaceHeight + `;
-            gap: 5px;`;
+            gap: 23px;`;
         
         document.getElementById("mainContent").innerHTML = "";  
         
@@ -65,7 +66,9 @@ export class uiHandler
         $pauseButton.style.fontSize = "60px";
         $pauseButton.style.position = "fixed";
         $pauseButton.style.top = "300px";
-        $pauseButton.style.left = String(Number(this.gridSpaceWidth.replace("px","")) * 3 + 50) + "px";;
+        //console.log(document.getElementById("bigGrid"));
+        const $bigGridGap = Number(document.getElementById("bigGrid").style.gap.replace("px",""));
+        $pauseButton.style.left = String(Number(this.gridSpaceWidth.replace("px","")) * 3 + ($bigGridGap *2) + 50) + "px";;
         
         $pauseButton.addEventListener("click",function(){
            
@@ -94,8 +97,8 @@ export class uiHandler
         $nextButton.style.fontSize = "60px";
         $nextButton.style.position = "fixed";
         $nextButton.style.top = "600px";
-        console.log(String(Number(this.gridSpaceWidth) * 3) + "px");
-        $nextButton.style.left = String(Number(this.gridSpaceWidth.replace("px","")) * 3 + 50) + "px";
+        const $bigGridGap = Number(document.getElementById("bigGrid").style.gap.replace("px",""));
+        $nextButton.style.left = String(Number(this.gridSpaceWidth.replace("px","")) * 3 + ($bigGridGap *2) + 50) + "px";;
         
         $nextButton.addEventListener("click",function(){
          
@@ -129,6 +132,7 @@ export class uiHandler
         $gridSpaceDOM.style.placeItems = "center";
         $gridSpaceDOM.style.height = this.gridSpaceHeight;
         $gridSpaceDOM.style.width = this.gridSpaceWidth;
+        $gridSpaceDOM.style.border = "2px solid darkGray";
         
         this.grid.append($gridSpaceDOM);
         
@@ -148,14 +152,13 @@ export class uiHandler
         domObj.style.fontSize = "85px";
         domObj.style.margin = "10px";
         domObj.style.textAlign = "center";
+        domObj.style.border = "2px solid lightGray";
         
         $replaceableDiv.append(domObj);
         
         $replaceableDiv.innerHTML += "<div class='destDiv' style='font-family:sans-serif;font-size:80px;word-break:break-all;inner-width:" + this.gridSpaceWidth + ";padding-left:10px;padding-right:10px;text-align:center'></div>";
         
         domObj.style.marginTop = Number(100-domObj.clientHeight/2);
-        
-        domObj.style.textAlign = 'center';
         
         gs.initialString = domObj.innerText;
         

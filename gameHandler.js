@@ -44,7 +44,7 @@ export class gameHandler
             
             for(const ph of this.langHandler.GetDict(lang)){
                 
-                if(ph.groups.includes("animal")) this.eligibleContent.push(ph);
+                if(ph.groups.includes("very simple number")) this.eligibleContent.push(ph);
             }
         }  
     }
@@ -73,7 +73,7 @@ export class gameHandler
             let $phraseSpan = document.createElement("div");
             
             $phraseSpan.style.fontWeight = "bold";
-            $phraseSpan.style.textDecoration = "underline";
+            //$phraseSpan.style.textDecoration = "underline";
             $phraseSpan.style.fontFamily = "sans-serif";
             
             const $engPhrase = $destructoArr.shift().engPhrase;
@@ -87,8 +87,6 @@ export class gameHandler
             }
             
             $phraseSpan.innerHTML = this._TransformEachLetterToSpan($engPhrase);
-            
-//            $phraseSpan.insertAdjacentHTML("beforeend", "<br>");
             
             this.uiHandler.UpdateGridspace(gs,$phraseSpan);
             
