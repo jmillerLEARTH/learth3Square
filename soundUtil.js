@@ -7,8 +7,10 @@ class audioHolder
         this.preloadedSounds = [];
     }
     
-    PreloadAudio(url) {
+    PreloadAudio(url,playbackRt = 1) {
         const $audio = new Audio();
+
+        
         // once this file loads, it will call loadedAudio()
         // the file will be kept by the browser as cache
 
@@ -16,7 +18,9 @@ class audioHolder
 
         $audio.addEventListener('canplaythrough', function(){$self.LoadedAudio()}, false);
         $audio.src = url;
+        $audio.playbackRate = playbackRt;
         this.preloadedSounds.push($audio);
+
     }   
     
     LoadedAudio(){
@@ -44,25 +48,17 @@ class audioHolder
                         audios[i].play();
                     }
                     catch{
-                        console.log("fail");
-    //                    if(debugLogObject != null){
-    //                        debugLogObject.failedAudioSources.push(audios[i]);
-    //                        console.warn(debugLogObject.failedAudioSources);
-                        //}       
+                        console.log("fail");  
                     }
                 })
 
-                //sessionStorage.failedAudioArray = audios;
-                //sessionStorage.failedAudio = audios[i-1];
+
             }
         }
 
-        //console.error("I WANT THIS TO LOG FAILED AUDIO SOURCES");
 
-        //debugger
-
-        //audios[0].CreateAndPlayAudio();
-
+        //audios[0].playbackRate = 0.5;
+        console.log(audios[0].playbackRate);
         audios[0].play();
         
 
@@ -71,14 +67,14 @@ class audioHolder
  
 }
 
-export function PlaySequentialSounds(soundPaths,debugLogObject = null){
+export function PlaySequentialSounds(soundPaths,debugLogObject = null,playbackRate = 1){
     
     const $audioHolder = new audioHolder();
     $audioHolder.totalPaths = soundPaths.length;
     
     // we start preloading all the audio files
     for (const snd of soundPaths) {
-        $audioHolder.PreloadAudio(snd);
+        $audioHolder.PreloadAudio(snd,playbackRate);
     }
     
 

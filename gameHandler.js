@@ -12,6 +12,8 @@ export class gameHandler
         this.gameLangs = [];
         
         this.eligibleContent = [];
+        
+        this.clicksWithinLastFiveSeconds = 0
     }
     
     GoToGameSettingsPage(){
@@ -44,7 +46,7 @@ export class gameHandler
             
             for(const ph of this.langHandler.GetDict(lang)){
                 
-                if(ph.groups.includes("very simple number")) this.eligibleContent.push(ph);
+                if(ph.groups.includes("animal")) this.eligibleContent.push(ph);
             }
         }  
     }

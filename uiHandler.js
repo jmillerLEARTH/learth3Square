@@ -173,7 +173,15 @@ export class uiHandler
            
             const $GH = window.gameHandler;
             
-            $GH.langHandler.PlayPhrases($GH.gameLangs[0],[$ogDestString]);
+            setTimeout(function(){$GH.clicksWithinLastFiveSeconds--},5000);
+            
+            //console.log($GH.clicksWithinLastFiveSeconds);
+            
+            if($GH.clicksWithinLastFiveSeconds >= 2) $GH.langHandler.PlayPhrases($GH.gameLangs[0],[$ogDestString],false, 0.25);
+            else if($GH.clicksWithinLastFiveSeconds == 1) {$GH.langHandler.PlayPhrases($GH.gameLangs[0],[$ogDestString],false, 0.5)}
+            else $GH.langHandler.PlayPhrases($GH.gameLangs[0],[$ogDestString],false, 1);
+            
+            $GH.clicksWithinLastFiveSeconds++;
             
         });
         

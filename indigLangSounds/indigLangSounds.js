@@ -32,7 +32,7 @@ export class langHandler {
         return false
     }
     
-    PlayPhrases(lang,phraseArr,searchByEngPhrase=false){
+    PlayPhrases(lang,phraseArr,searchByEngPhrase=false,playbackRate = 1){
         
         let $sounds = [];
         
@@ -48,9 +48,7 @@ export class langHandler {
             }
         }
         
-        console.log($sounds);
-        
-        PlaySequentialSounds($sounds,this);
+        PlaySequentialSounds($sounds,this,playbackRate);
         
         //debugger;
     }
