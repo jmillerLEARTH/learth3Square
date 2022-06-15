@@ -13,7 +13,7 @@ export class gameHandler
         
         this.eligibleContent = [];
         
-        this.clicksWithinLastFiveSeconds = 0
+        this.clicksWithinLastFiveSeconds = 0 //it's actually 3.75 seconds
     }
     
     GoToGameSettingsPage(){

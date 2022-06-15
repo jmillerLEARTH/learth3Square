@@ -173,7 +173,7 @@ export class uiHandler
            
             const $GH = window.gameHandler;
             
-            setTimeout(function(){$GH.clicksWithinLastFiveSeconds--},5000);
+            setTimeout(function(){$GH.clicksWithinLastFiveSeconds--},3750);
             
             //console.log($GH.clicksWithinLastFiveSeconds);
             
