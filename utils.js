@@ -9,3 +9,10 @@ export function ShuffleArray(array) {
     
     return [...array]
 }
+
+export function ArrArgHelper(arr){
+    
+    if(!Array.isArray(arr)) return [arr]
+    else if(arr != undefined) return arr
+    else console.warn("ArrArgHelper: Passed undefined arg");
+}

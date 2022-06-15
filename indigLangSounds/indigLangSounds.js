@@ -1,5 +1,6 @@
 import {PlaySequentialSounds} from "./../soundUtil.js";
 import {ojibwemowinDict} from "./ojibwemowin.js";
+import {ArrArgHelper} from "./../utils.js";
 
 export class langHandler {
     
@@ -35,6 +36,8 @@ export class langHandler {
     PlayPhrases(lang,phraseArr,searchByEngPhrase=false,playbackRate = 1){
         
         let $sounds = [];
+        
+        phraseArr = ArrArgHelper(phraseArr);
         
         for(const ph of phraseArr){
             

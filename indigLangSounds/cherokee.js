@@ -6,6 +6,8 @@ const cherokeeDict = [
     phrase: "sowo",
     lang: "cherokee",
     engPhrase: "1",
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
+    syllables: 2,
     soundFiles: ["indigLangSounds/cherokeeSounds/01.mp3"];
     },
     
@@ -13,6 +15,8 @@ const cherokeeDict = [
     phrase: "tali",
     lang: "cherokee",
     engPhrase: "2",
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
+    syllables: 2,
     soundFiles: ["indigLangSounds/cherokeeSounds/02.mp3"];
     },
     
@@ -20,6 +24,8 @@ const cherokeeDict = [
     phrase: "tsoi",
     lang: "cherokee",
     engPhrase: "3",
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
+    syllables: 2,
     soundFiles: ["indigLangSounds/cherokeeSounds/03.mp3"];
     },
     
@@ -27,6 +33,8 @@ const cherokeeDict = [
     phrase: "nvgi",
     lang: "cherokee",
     engPhrase: "4",
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
+    syllables: 2,
     soundFiles: ["indigLangSounds/cherokeeSounds/04.mp3"];
     },
     
@@ -34,17 +42,57 @@ const cherokeeDict = [
     phrase: "hisgi",
     lang: "cherokee",
     engPhrase: "5",
+    groups: ["number","cardinal","traditional", "simple number", "very simple number"],
+    syllables: 2,
     soundFiles: ["indigLangSounds/cherokeeSounds/05.mp3"];
     },
     
+    {
+    phrase: "sudali",
+    lang: "cherokee",
+    engPhrase: "6",
+    groups: ["number","cardinal","traditional", "simple number"],
+    syllables: 3,
+    soundFiles: ["indigLangSounds/cherokeeSounds/06.mp3"];
+    },
+    
+    {
+    phrase: "galiquogi",
+    lang: "cherokee",
+    engPhrase: "7",
+    groups: ["number","cardinal","traditional", "simple number"],
+    syllables: 4,
+    soundFiles: ["indigLangSounds/cherokeeSounds/07.mp3"];
+    },
+    
+    {
+    phrase: "tsunela",
+    lang: "cherokee",
+    engPhrase: "8",
+    groups: ["number","cardinal","traditional", "simple number"],
+    syllables: 3,
+    soundFiles: ["indigLangSounds/cherokeeSounds/08.mp3"];
+    },
+    
+    {
+    phrase: "sonela",
+    lang: "cherokee",
+    engPhrase: "9",
+    groups: ["number","cardinal","traditional", "simple number"],
+    syllables: 3,
+    soundFiles: ["indigLangSounds/cherokeeSounds/09.mp3"];
+    },
+    
+    {
+    phrase: "sgohi",
+    lang: "cherokee",
+    engPhrase: "10",
+    groups: ["number","cardinal","traditional", "simple number"],
+    syllables: 2,
+    soundFiles: ["indigLangSounds/cherokeeSounds/10.mp3"];
+    },
+    
 ]
-
-export function InitCherokee(cherokee){
-    
-    
-    _InitNumbers(cherokee);
-    
-}
 
 function _InitNumbers(cherokee){
     
